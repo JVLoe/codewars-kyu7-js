@@ -17,3 +17,23 @@ function descendingOrder1(n){
     return Number(decend)
 }
 
+// Testing 1-2-3
+function number(array){
+    return array.map(function (line, index) {
+        return (index + 1) + ": " + line;
+    });
+}
+
+function number1(array){
+    let newArray = [];
+    if (array.length === 0) {
+        return [];
+    } else {
+        for (let i = 0; i < array.length; i++){
+            newArray.push((i + 1) + ": " +array[i]);
+        }
+    }
+    return newArray
+}
+
+//
