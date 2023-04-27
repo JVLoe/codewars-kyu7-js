@@ -46,3 +46,19 @@ const XO1 = str => {
     str = str.toLowerCase().split('');
     return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
 }
+
+// Vowel Count
+function getCount(str) {
+    const vowels = ["a", "e", "i", "o", "u"];
+    let count = 0;
+    for (let letter of str.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+    return count
+}
+
+function getCount1(str) {
+    return (str.match(/[aeiou]/ig)||[]).length;
+}
