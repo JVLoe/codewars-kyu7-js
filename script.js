@@ -36,4 +36,13 @@ function number1(array){
     return newArray
 }
 
-//
+// Exes and Ohs
+function XO(str) {
+    let x = str.match(/x/gi);
+    let o = str.match(/o/gi);
+    return (x && x.length) === (o && o.length);
+}
+const XO1 = str => {
+    str = str.toLowerCase().split('');
+    return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
+}
